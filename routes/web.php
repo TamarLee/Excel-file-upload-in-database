@@ -10,9 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function(){
-	return view('home');
-});
+Route::get('/', 'HomeController@index');
 Route::get('one', 'MainController@index');
 Route::post('two', 'ExcelOneController@importExcelFile');
 Route::post('result', 'ExcelTwoController@importExcelFile');
